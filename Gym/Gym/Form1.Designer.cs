@@ -37,9 +37,9 @@ namespace Gym
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textSeach2 = new System.Windows.Forms.TextBox();
-            this.addButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,10 +48,8 @@ namespace Gym
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(15, 35);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(757, 184);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
@@ -119,42 +117,44 @@ namespace Gym
             this.textSeach2.Click += new System.EventHandler(this.textSeach2_Click);
             this.textSeach2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textSeach2_KeyPress);
             // 
-            // addButton
-            // 
-            this.addButton.Location = new System.Drawing.Point(561, 232);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(94, 30);
-            this.addButton.TabIndex = 8;
-            this.addButton.Text = "Добавить";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.addButton_Click);
-            // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(678, 232);
+            this.saveButton.Location = new System.Drawing.Point(569, 232);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(94, 30);
+            this.saveButton.Size = new System.Drawing.Size(94, 66);
             this.saveButton.TabIndex = 9;
             this.saveButton.Text = "Сохранить";
             this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(561, 268);
+            this.deleteButton.Location = new System.Drawing.Point(677, 232);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(94, 30);
+            this.deleteButton.Size = new System.Drawing.Size(94, 66);
             this.deleteButton.TabIndex = 10;
             this.deleteButton.Text = "Удалить";
             this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(15, 304);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(756, 30);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Вывести клиентов и тренеров";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(784, 347);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.addButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textSeach2);
             this.Controls.Add(this.label2);
@@ -165,6 +165,7 @@ namespace Gym
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -181,9 +182,9 @@ namespace Gym
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textSeach2;
-        private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.Button button3;
     }
 }
 
