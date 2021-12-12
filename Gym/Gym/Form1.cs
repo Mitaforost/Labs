@@ -19,6 +19,7 @@ namespace Gym
         DataTable dt;
         string connectionString = @"Server=localhost;Port=5432;User Id=postgres;Password=z7AEwer79;Database=OPIgym;";
         string npg = "SELECT * FROM coach, students";
+        public bool students = true;
         public Form1()
         {
             InitializeComponent();
@@ -124,14 +125,27 @@ namespace Gym
         }
         private void saveButton_Click(object sender, EventArgs e)
         {
-            //NpgsqlConnection connect = new NpgsqlConnection(@"Server=localhost;Port=5432;User Id=postgres;Password=z7AEwer79;Database=OPIgym;");
-            //connect.Open();
-            //adapter = new NpgsqlDataAdapter(npg, connect);
-            //commandBuilder = new NpgsqlCommandBuilder(adapter);
-            //adapter.Update(ds);
-            DataTable table = new DataTable("students");
-            commandBuilder = new NpgsqlCommandBuilder(adapter);
-            adapter.Update(table);
+            NpgsqlConnection connectString = new NpgsqlConnection(@"Server=localhost;Port=5432;User Id=postgres;Password=z7AEwer79;Database=OPIgym;");
+            if (students == true)
+            {
+                string sql_st = "SELECT * FROM students";
+                connectString.Open();
+                NpgsqlDataAdapter adapter_st = new NpgsqlDataAdapter(sql_st, connectString);
+                NpgsqlCommandBuilder cmdBuilder_st = new NpgsqlCommandBuilder(adapter_st);
+                adapter_st.UpdateCommand = cmdBuilder_st.GetUpdateCommand();
+                adapter_st.Update((DataTable)dataGridView1.DataSource);
+                connectString.Close();
+            }
+            else
+            {
+                string sql_ch = "SELECT * FROM coach";
+                connectString.Open();
+                NpgsqlDataAdapter adapter_ch = new NpgsqlDataAdapter(sql_ch, connectString);
+                NpgsqlCommandBuilder cmdBuilder_ch = new NpgsqlCommandBuilder(adapter_ch);
+                adapter_ch.UpdateCommand = cmdBuilder_ch.GetUpdateCommand();
+                adapter_ch.Update((DataTable)dataGridView1.DataSource);
+                connectString.Close();
+            }
         }
         private void iDelete()
         {
