@@ -87,7 +87,6 @@ namespace Gym
             this.textSearch.Size = new System.Drawing.Size(275, 20);
             this.textSearch.TabIndex = 4;
             this.textSearch.Click += new System.EventHandler(this.textSearch_Click);
-            this.textSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textSearch_KeyDown);
             this.textSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textSearch_KeyPress);
             // 
             // label2
@@ -165,7 +164,6 @@ namespace Gym
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

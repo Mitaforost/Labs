@@ -37,11 +37,6 @@ namespace Gym
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             NpgsqlConnection connectString = new NpgsqlConnection(@"Server=localhost;Port=5432;User Id=postgres;Password=z7AEwer79;Database=OPIgym;");
@@ -119,10 +114,6 @@ namespace Gym
             textSearch.Text = "";
         }
 
-        private void textSearch_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
         private void saveButton_Click(object sender, EventArgs e)
         {
             NpgsqlConnection connectString = new NpgsqlConnection(@"Server=localhost;Port=5432;User Id=postgres;Password=z7AEwer79;Database=OPIgym;");
@@ -177,7 +168,7 @@ namespace Gym
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            DataRow row = ds.Tables[0].NewRow(); // добавляем новую строку в DataTable
+            DataRow row = ds.Tables[0].NewRow();
             ds.Tables[0].Rows.Add(row);
         }
     }
