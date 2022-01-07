@@ -1,0 +1,7 @@
+F:\labs\C#\OAiPLabOne\OAiPLabOne\bin\Debug\OAiPLabOne.exe.config
+F:\labs\C#\OAiPLabOne\OAiPLabOne\bin\Debug\OAiPLabOne.exe
+F:\labs\C#\OAiPLabOne\OAiPLabOne\bin\Debug\OAiPLabOne.pdb
+F:\labs\C#\OAiPLabOne\OAiPLabOne\obj\Debug\OAiPLabOne.csproj.AssemblyReference.cache
+F:\labs\C#\OAiPLabOne\OAiPLabOne\obj\Debug\OAiPLabOne.csproj.CoreCompileInputs.cache
+F:\labs\C#\OAiPLabOne\OAiPLabOne\obj\Debug\OAiPLabOne.exe
+F:\labs\C#\OAiPLabOne\OAiPLabOne\obj\Debug\OAiPLabOne.pdb
