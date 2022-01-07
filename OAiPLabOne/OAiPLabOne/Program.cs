@@ -10,6 +10,7 @@ namespace OAiPLabOne
     {
         static void Main(string[] args)
         {
+            // 10 Вариант. Дана последовательность из четырех чисел A, B, C, D. Определить формируют ли они убывающую последовательность.
             Console.WriteLine("Введите числа A, B, C, D: ");
             int A = Convert.ToInt32(Console.ReadLine());
             int B = Convert.ToInt32(Console.ReadLine());
