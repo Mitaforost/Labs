@@ -1,0 +1,7 @@
+F:\labs\C#\OAiPKR\OAiPKR\bin\Debug\OAiPKR.exe.config
+F:\labs\C#\OAiPKR\OAiPKR\bin\Debug\OAiPKR.exe
+F:\labs\C#\OAiPKR\OAiPKR\bin\Debug\OAiPKR.pdb
+F:\labs\C#\OAiPKR\OAiPKR\obj\Debug\OAiPKR.csproj.AssemblyReference.cache
+F:\labs\C#\OAiPKR\OAiPKR\obj\Debug\OAiPKR.csproj.CoreCompileInputs.cache
+F:\labs\C#\OAiPKR\OAiPKR\obj\Debug\OAiPKR.exe
+F:\labs\C#\OAiPKR\OAiPKR\obj\Debug\OAiPKR.pdb
