@@ -1,0 +1,6 @@
+F:\labs\C#\OAiPLabTwo\OAiPLabTwo\bin\Debug\OAiPLabTwo.exe.config
+F:\labs\C#\OAiPLabTwo\OAiPLabTwo\bin\Debug\OAiPLabTwo.exe
+F:\labs\C#\OAiPLabTwo\OAiPLabTwo\bin\Debug\OAiPLabTwo.pdb
+F:\labs\C#\OAiPLabTwo\OAiPLabTwo\obj\Debug\OAiPLabTwo.csproj.CoreCompileInputs.cache
+F:\labs\C#\OAiPLabTwo\OAiPLabTwo\obj\Debug\OAiPLabTwo.exe
+F:\labs\C#\OAiPLabTwo\OAiPLabTwo\obj\Debug\OAiPLabTwo.pdb
