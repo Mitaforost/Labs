@@ -171,5 +171,34 @@ namespace Gym
             DataRow row = ds.Tables[0].NewRow();
             ds.Tables[0].Rows.Add(row);
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textSeach2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            NpgsqlConnection connectString = new NpgsqlConnection(@"Server=localhost;Port=5432;User Id=postgres;Password=z7AEwer79;Database=OPIgym;");
+            NpgsqlCommand TableConnection = new NpgsqlCommand();
+            connectString.Open();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter("select * from students JOIN coach ON students.fk_students_coach = coach.coach_id", connectString);
+            DataTable dt = new DataTable("students");
+            DataTable dt2 = new DataTable("coach");
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            da.Fill(dt2);
+            dataGridView1.DataSource = dt2;
+            dt.DefaultView.RowFilter = String.Format("phone_coach like '%" + textBox1.Text + "%'");
+            dt2.DefaultView.RowFilter = String.Format("phone_students like '%" + textBox1.Text + "%'");
+
+            TableConnection.Dispose();
+            connectString.Close();
+        }
     }
 }

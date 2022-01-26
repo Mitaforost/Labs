@@ -40,6 +40,8 @@ namespace Gym
             this.saveButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +116,7 @@ namespace Gym
             this.textSeach2.Size = new System.Drawing.Size(275, 20);
             this.textSeach2.TabIndex = 6;
             this.textSeach2.Click += new System.EventHandler(this.textSeach2_Click);
+            this.textSeach2.TextChanged += new System.EventHandler(this.textSeach2_TextChanged);
             this.textSeach2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textSeach2_KeyPress);
             // 
             // saveButton
@@ -146,11 +149,31 @@ namespace Gym
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 344);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(114, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Поиск по номеру тел";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(137, 341);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(275, 20);
+            this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 347);
+            this.ClientSize = new System.Drawing.Size(784, 373);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.saveButton);
@@ -183,6 +206,8 @@ namespace Gym
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
